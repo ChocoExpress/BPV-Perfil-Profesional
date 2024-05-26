@@ -1,0 +1,482 @@
+
+body {
+    position: relative;
+}
+
+.logo-imagen-fondo {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1500px; /* Ajusta el tamaño según sea necesario */
+    height: 50px; /* Mantiene la proporción de la imagen */
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+    opacity: 0.1; /* Ajusta la opacidad para un efecto de fondo */
+}
+
+.logo-imagen-titulo {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+}
+
+.panel {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.31);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+/* Lightbox para PDFs */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    position: relative;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.31);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: #666;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.panel {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.31);
+    padding: 20px;
+    width: 1600px; /* Definir un ancho estándar */
+    max-width: 100%; /* Asegurar que el panel no exceda el ancho de la pantalla */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panel-bar {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444444;
+}
+
+.panel-logo {
+    display: none; /* Oculto por defecto */
+    width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    height: 50px;
+    margin-right: 10px;
+}
+
+.panel-bar-text-container {
+    flex-grow: 1;
+}
+
+.panel-bar-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #444;
+}
+
+.panel-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.panel-section {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+.panel-section:last-child {
+    margin-right: 0;
+}
+
+.panel-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #444444;
+    padding-bottom: 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 200px; /* Definir un ancho estándar para las imágenes */
+    height: 200px; /* Definir un alto estándar para las imágenes */
+    object-fit: cover; /* Asegurar que las imágenes mantengan su proporción */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.styled-video {
+    width: 200px; /* Ajusta el ancho del video según sea necesario */
+    height: auto; /* Ajusta la altura del video según sea necesario */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.styled-video:hover {
+    transform: scale(1.05);
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img, .lightbox video {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.download-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #0b7dda;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 16px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 16px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+.slider.round {
+    border-radius: 16px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.bubble-container {
+    display: flex;
+    justify-content: center; /* Centra las burbujas horizontalmente */
+    flex-wrap: wrap; /* Permitir que las burbujas se envuelvan a una nueva fila */
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+.bubble {
+    width: 250px; /* Dimensiones de la burbuja */
+    height: 250px; /* Dimensiones de la burbuja */
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease;
+    margin: 0 10px 20px 10px; /* Espacio alrededor de cada burbuja */
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Asegura que el contenido no sobresalga */
+}
+
+.bubble img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bubble:hover {
+    transform: scale(1.05);
+}
+
+.bubble:hover .edit-button,
+.bubble:hover .admin-button { /* Agregar hover para los botones del modo Admin */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bubble-text {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    user-select: none; /* Evita la selección de texto al hacer clic */
+}
+
+.edit-button,
+.admin-button { /* Estilos comunes para los botones */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+}
+
+.edit-button:hover,
+.admin-button:hover { /* Estilos hover para los botones */
+    transform: scale(1.2);
+}
+
+.admin-button { /* Estilos específicos para los botones del modo Admin */
+    left: 10px; /* Posicionar el primer botón a la izquierda */
+}
+
+.admin-button:nth-of-type(2) { /* Posicionar el segundo botón a la derecha */
+    right: 10px;
+    left: auto; /* Sobrescribir la propiedad left */
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.panel-bar-buttons {
+    display: none; /* Inicialmente ocultos */
+}
+
+.panel-bar-buttons button {
+    font-size: 20px;
+    margin: 0 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#addButton {
+    display: none; /* Inicialmente oculto */
+    background-color: #2196f3; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#addButton:hover {
+    background-color: #2196f3; /* Verde más oscuro al hacer hover */
+}
